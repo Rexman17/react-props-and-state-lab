@@ -35,13 +35,13 @@ working our way down through all its descendants:
 
 ### `App`
 
-1.  The app's initial state is already defined. App has two children: the
-    `<Filters />` and `<PetBrowser />` components.
+<!-- 1.  The app's initial state is already defined. App has two children: the
+    `<Filters />` and `<PetBrowser />` components. -->
 
-- App should pass a **callback** prop, `onChangeType`, to `<Filters />`. This
-  callback needs to update `<App />`'s `state.filters.type`
+<!-- - App should pass a **callback** prop, `onChangeType`, to `<Filters />`. This
+  callback needs to update `<App />`'s `state.filters.type` -->
 
-- `<Filters />` needs a **callback** prop, `onFindPetsClick`. When the
+<!-- - `<Filters />` needs a **callback** prop, `onFindPetsClick`. When the
   `<Filters />` component calls `onFindPetsClick`, `<App />` should fetch a list
   of pets using `fetch()`.
 
@@ -58,23 +58,23 @@ working our way down through all its descendants:
   _exact_ URLs as described above, or your tests will fail!**
 
 The pet data received should include information on individual pets and their
-adoption status.
+adoption status. -->
 
-### `Filters`
+<!-- ### `Filters`
 
 1.  Should receive an `onChangeType` callback prop. This callback prop gets
     called whenever the value of the `<select>` element changes with the **value**
     of the `<select>`
 
 - Should receive an `onFindPetsClick` callback prop. This callback prop gets
-  called when the users clicks the 'Find pets' button.
+  called when the users clicks the 'Find pets' button. -->
 
 ### `PetBrowser`
 
-1.  Should receive a `pets` prop. This is an array of pets that the component
+<!-- 1.  Should receive a `pets` prop. This is an array of pets that the component
     uses to render `<Pet />` components. App should determine which pets to pass
     down as props. App should be responsible for filtering this list based on the
-    types of pets the user wants to see.
+    types of pets the user wants to see. -->
 
 - Should receive an `onAdoptPet` prop. This callback prop gets passed to its
 - `<Pet />` children components.
